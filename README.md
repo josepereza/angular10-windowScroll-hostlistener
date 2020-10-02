@@ -1,5 +1,6 @@
 # WindowScroll
 ## app.component.ts 
+Dentro del archivo app.component.ts se podira sustituir :
 ```
  @HostListener("window:scroll", [])
   onWindowScroll() {
