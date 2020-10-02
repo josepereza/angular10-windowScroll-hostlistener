@@ -1,4 +1,21 @@
 # WindowScroll
+## app.component.ts 
+```
+ @HostListener("window:scroll", [])
+  onWindowScroll() {
+    const offset = this.window.pageYOffset || this.document.documentElement.scrollTop || this.document.body.scrollTop || 0;
+    console.log(offset);
+  }
+```
+
+por:
+```
+ @HostListener("document:scroll", [])
+  onWindowScroll() {
+    const offset =  this.document.documentElement.scrollTop || this.document.body.scrollTop || 0;
+    console.log(offset);
+  }
+```
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.
 
